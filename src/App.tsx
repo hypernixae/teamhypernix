@@ -2,6 +2,8 @@ import { Navigation } from "./components/Navigation";
 import { Hero } from "./components/Hero";
 import { Features } from "./components/Features";
 import { Performance } from "./components/Performance";
+import { Gallery } from "./components/Gallery";
+import { Sponsors } from "./components/Sponsors";
 import { Footer } from "./components/Footer";
 
 export default function App() {
@@ -11,6 +13,8 @@ export default function App() {
       <Hero />
       <Features />
       <Performance />
+      <Gallery />
+      <Sponsors />
       <Footer />
     </div>
   );

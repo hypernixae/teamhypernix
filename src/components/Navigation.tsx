@@ -11,6 +11,8 @@ export function Navigation() {
     { name: "Home", href: "#home" },
     { name: "About Us", href: "#features" },
     { name: "Achievements", href: "#performance" },
+    { name: "Gallery", href: "#gallery" },
+    { name: "Sponsors", href: "#sponsors" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -20,7 +22,15 @@ export function Navigation() {
     if (!target) return;
     const start = window.scrollY || window.pageYOffset;
     const targetRect = target.getBoundingClientRect();
-    const targetY = start + targetRect.top;
+    const navbarHeight = 64; // h-16 = 4rem = 64px
+    // Different offsets for different sections
+    let offset = 10; // Default offset
+    if (selector === "#performance") {
+      offset = 20; // Achievements needs more space
+    } else if (selector === "#features" || selector === "#gallery" || selector === "#sponsors") {
+      offset = 0; // About Us, Gallery, Sponsors - blue badge heading sits right below navbar
+    }
+    const targetY = start + targetRect.top - navbarHeight - offset;
     const distance = targetY - start;
     const startTime = performance.now();
 
