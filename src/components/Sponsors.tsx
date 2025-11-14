@@ -124,7 +124,7 @@ export function Sponsors() {
                 </p>
                 <div className="mt-6">
                   <a
-                    href="https://drive.google.com/file/d/11iKO9fvX-KMnwgcGvW2EAqUejNzqboMp/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1zuC7HUYdXoh0YKv2sCHAZnwspto8DhXQ/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="relative inline-flex px-20 md:px-24 bg-transparent border border-primary/40 text-foreground rounded-full overflow-hidden items-center justify-center space-x-3 cursor-pointer group whitespace-nowrap text-lg md:text-xl"
