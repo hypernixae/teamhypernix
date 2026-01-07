@@ -5,7 +5,6 @@
 
   export default defineConfig({
     plugins: [react()],
-    base: "/teamhypernix",
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
@@ -56,10 +55,11 @@
         '@': path.resolve(__dirname, './src'),
       },
     },
-    build: {
-      target: 'esnext',
-      outDir: 'build',
-    },
+  build: {
+    target: 'esnext',
+    outDir: 'build',
+  },
+  publicDir: 'public',
     server: {
       port: 3000,
       open: true,
