@@ -71,7 +71,7 @@ export function Footer() {
             viewport={{ once: true }}
             className="text-foreground/60 text-sm"
           >
-            © 2025 Hypernix. All rights reserved.
+            © 2026 Hypernix. All rights reserved.
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}
