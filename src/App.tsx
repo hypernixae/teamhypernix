@@ -1,3 +1,4 @@
+
 import { Navigation } from "./components/Navigation";
 import { Hero } from "./components/Hero";
 import { Features } from "./components/Features";
@@ -5,8 +6,10 @@ import { Performance } from "./components/Performance";
 import { Gallery } from "./components/Gallery";
 import { Sponsors } from "./components/Sponsors";
 import { Footer } from "./components/Footer";
+import { useGATracking } from "./useGATracking";
 
 export default function App() {
+  useGATracking();
   return (
     <div className="dark min-h-screen cloud-gradient">
       <Navigation />
